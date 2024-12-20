@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #e6f3ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            overflow: hidden;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .title {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 0.25rem;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                gap: 1rem;
+            }
+
+            .card {
+                width: calc(50% - 1rem);
+                min-width: 200px;
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+
+            .profile-img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="profile-img">
+                <img src="https://preview.redd.it/120-percent-manga-anime-comparison-v0-qd901258kw4c1.png?width=1675&format=png&auto=webp&s=48bbfeb9f6c2c6b61421de701e9c5304986c9dad" alt="Profile Image">
+            </div>
+            <h2 class="name">Shivnandan Basotra</h2>
+            <p class="title">Software Engineer</p>
+            <p class="subtitle">Tech Company Inc.</p>
+        </div>
+
+        <div class="card">
+            <div class="profile-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2OW9f3rtT1WY6VR0-ErmmEkKzYVR88UF82w&s" alt="Profile Image">
+            </div>
+            <h2 class="name">Jane Smith</h2>
+            <p class="title">Product Designer</p>
+            <p class="subtitle">Design Studio Ltd.</p>
+        </div>
+
+        <div class="card">
+            <div class="profile-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCD1iZ7zgAjmo-GouFU0fEMmD5HBj7PqAsw&s" alt="Profile Image">
+            </div>
+            <h2 class="name">Mike Johnson</h2>
+            <p class="title">Marketing Lead</p>
+            <p class="subtitle">Creative Agency</p>
+        </div>
+
+        <div class="card">
+            <div class="profile-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLwwNmmZWbB7TBaENWko2jR16hKyfpbBQgPQ&s" alt="Profile Image">
+            </div>
+            <h2 class="name">Sarah Williams</h2>
+            <p class="title">Project Manager</p>
+            <p class="subtitle">Solutions Corp</p>
+        </div>
+    </div>
+</body>
+</html>
+
